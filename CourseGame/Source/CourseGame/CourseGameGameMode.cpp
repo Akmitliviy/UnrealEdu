@@ -2,6 +2,7 @@
 
 #include "CourseGameGameMode.h"
 #include "CourseGameCharacter.h"
+#include "GameFramework/GameStateBase.h"
 #include "UObject/ConstructorHelpers.h"
 
 ACourseGameGameMode::ACourseGameGameMode()
@@ -12,4 +13,19 @@ ACourseGameGameMode::ACourseGameGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+}
+
+void ACourseGameGameMode::MyFunc()
+{
+	UObject* Obj = NewObject<UObject>();
+	TSubclassOf<UObject> Class;
+
+	UGameInstance* GameInstance = GetWorld()->GetGameInstance();
+	// GetWorld()->GetAuthGameMode()->GetGameState();
+	// GetWorld()->GetGameState();
+	// GetWorld()->GetGameState()->PlayerArray;
+	// GetWorld()->GetGameState()->GetGameTimeSinceCreation();
+	// GetWorld()->GetGameState()->HasBegunPlay(); // тру якщо всі підключилися і гра почалася
+	
+	
 }

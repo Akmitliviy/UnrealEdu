@@ -31,7 +31,7 @@ Global
 	EndGlobalSection
 	# Visual Assist Section
 	GlobalSection(44630d46-96b5-488c-8df926e21db8c1a3) = preSolution
-		ueSolution = true
+		ueSolution=true
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0577A157-3961-46DC-B4B4-3CD1CEEBD184}.DebugGame Editor|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
